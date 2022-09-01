@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  // background-color: #000;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+$clr: #fff;
+$font-small: 1.8rem;
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: $font-small;
+  color: $clr;
+  // color: ;
+  background-color: #fff;
+}
+@keyframes moveFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-40rem);
+    }
+
+    50%{
+        transform: translateY();
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes change {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+
+@keyframes change-btn {
+    0% {
+        top: 10rem;
+        opacity: 0;
+    }
+    50% {
+        top: 5rem;
+        opacity: 0.5;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+      to right top,
+      rgba(0, 26, 24, 0.4),
+      rgba(13, 128, 173, 0.3)
+    ),
+    url(../img/papers.co-mh29-wave-sea-ocean-nature-angry-3840x2400.jpg);
+    clip-path: polygon(0 0, 100% 0%, 100% 75%, 0 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 25rem;
+
+    &_text {
+        width: 70vw;
+        text-align: center;
+        margin: 0 auto;
+        // border: 2px solid salmon;
+        &_h1 {
+        font-size: 7rem;
+        color: rgba(255, 255, 255, 1);
+        text-transform: uppercase;
+        transition: all 1s;
+        animation: moveFromTop 1.5s ease-out 1.5s;
+        &:hover {
+            color: #023d57;
+            transform: scale(1.1);
+        }
+        }
+        &_btn {
+            //   color: transparent;
+            //   -webkit-background-clip: text;
+            //   background: linear-gradient(270deg, #23d5ab, #23a6d5, #000, #e73c7e, #ee7752,  #853819, #e73c7e, #ee7752, #23d5ab,);
+            text-transform: uppercase;
+            background: linear-gradient( 270deg,  #23a6d5, #000);
+            font-weight: 1000;
+            letter-spacing: 3px;
+            font-size: 3rem;
+            background-size: 400% 400%;
+            animation: change 5s 5s ease-in-out infinite;
+            padding: 10px 30px;
+            text-decoration: none;
+            color: $clr;
+            display: inline-block;
+            margin-top: 10rem;
+            border-radius: 6rem;
+            &:hover{
+                box-shadow: 5px 10px 30px #000;
+            }
+        }
+    }
+    .button_box{
+        animation: moveFromTop 1.5s ease-out 1.5s;
+    }
+}    
+
+
+    

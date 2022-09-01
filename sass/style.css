@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #fff;
+}
+
+@-webkit-keyframes moveFromTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-40rem);
+            transform: translateY(-40rem);
+  }
+  50% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes moveFromTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-40rem);
+            transform: translateY(-40rem);
+  }
+  50% {
+    -webkit-transform: translateY();
+            transform: translateY();
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes change {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes change {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes change-btn {
+  0% {
+    top: 10rem;
+    opacity: 0;
+  }
+  50% {
+    top: 5rem;
+    opacity: 0.5;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes change-btn {
+  0% {
+    top: 10rem;
+    opacity: 0;
+  }
+  50% {
+    top: 5rem;
+    opacity: 0.5;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(0, 26, 24, 0.4)), to(rgba(13, 128, 173, 0.3))), url(../img/papers.co-mh29-wave-sea-ocean-nature-angry-3840x2400.jpg);
+  background-image: linear-gradient(to right top, rgba(0, 26, 24, 0.4), rgba(13, 128, 173, 0.3)), url(../img/papers.co-mh29-wave-sea-ocean-nature-angry-3840x2400.jpg);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 75%, 0 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 75%, 0 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 25rem;
+}
+
+.header_text {
+  width: 70vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header_text_h1 {
+  font-size: 7rem;
+  color: white;
+  text-transform: uppercase;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-animation: moveFromTop 1.5s ease-out 1.5s;
+          animation: moveFromTop 1.5s ease-out 1.5s;
+}
+
+.header_text_h1:hover {
+  color: #023d57;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header_text_btn {
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, right top, left top, from(#23a6d5), to(#000));
+  background: linear-gradient(270deg, #23a6d5, #000);
+  font-weight: 1000;
+  letter-spacing: 3px;
+  font-size: 3rem;
+  background-size: 400% 400%;
+  -webkit-animation: change 5s 5s ease-in-out infinite;
+          animation: change 5s 5s ease-in-out infinite;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin-top: 10rem;
+  border-radius: 6rem;
+}
+
+.header_text_btn:hover {
+  -webkit-box-shadow: 5px 10px 30px #000;
+          box-shadow: 5px 10px 30px #000;
+}
+
+.header .button_box {
+  -webkit-animation: moveFromTop 1.5s ease-out 1.5s;
+          animation: moveFromTop 1.5s ease-out 1.5s;
+}
+/*# sourceMappingURL=style.css.map */
